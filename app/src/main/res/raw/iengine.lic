@@ -1,0 +1,22 @@
+{
+  "version": "2.0",
+  "contract": {
+    "customer": "iface_sample",
+    "expiration": {
+      "year": 2020,
+      "month": 11,
+      "day": 29
+    },
+    "products": [
+      "iface"
+    ],
+    "idkit": {
+      "max_client_connections": 0,
+      "database_size": 0
+    },
+    "hwids": [
+      "A635PZlIeB4KCNID"
+    ],
+    "signature": "Q+lrkXn42N/kHLfI4DbJrHcRvt5rTIhAwv8j573srsJuKvflHzoOYvqv7DdMGDOStXR+tGoZkZi8KtfaRZssm4uYwHtaGgrShSkZKI3hAZi3aq9UqubocvqEcRb+GZiQOY10OX8ED2mWI+r1TwD8V2AS6OFKmowy1R6kgBnjjcw="
+  }
+}

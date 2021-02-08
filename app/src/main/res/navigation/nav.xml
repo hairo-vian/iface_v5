@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.application.iface_v5.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_enrollmentFragment"
+            app:destination="@id/enrollmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enrollmentFragment"
+        android:name="com.application.iface_v5.EnrollmentFragment"
+        android:label="fragment_enrollment"
+        tools:layout="@layout/fragment_enrollment" >
+        <argument
+            app:nullable="true"
+            app:argType="com.application.iface_v5.EnrollmentModel"
+            android:name="enrollArg"/>
+        <action
+            android:id="@+id/action_enrollmentFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
